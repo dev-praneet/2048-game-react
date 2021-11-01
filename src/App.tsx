@@ -2,6 +2,7 @@ import React from 'react';
 
 // components
 import Game from './components/Game/Game';
+import { Theme } from './components/Theme';
 
 // styles
 import styled from 'styled-components';
@@ -13,11 +14,12 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <Wrapper>
+    <Theme>
       <GlobalStyle/>
-      Hi There!
-      <Game />
-    </Wrapper>
+      <Wrapper>
+        <Game />
+      </Wrapper>
+    </Theme>
   );
 }
 

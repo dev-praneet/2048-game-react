@@ -1,5 +1,5 @@
 import { useEffect } from "react";
 
-export const useGame = () => {
-
+export const useIds = () => {
+    
 }

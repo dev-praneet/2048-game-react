@@ -14,18 +14,18 @@ const Wrapper = styled.div<WrapperProp>`
     top: ${props => props.theme.dimension.gap * (props.position[1] + 1) + props.theme.dimension.tileWidth * props.position[1] + 'px'};
     width: ${props => props.theme.dimension.tileWidth + 'px'};
     height: ${props => props.theme.dimension.tileWidth + 'px'};
-    background-color: hsl(57deg, 7%, 82%);
+    background-color: hsl(31, 20%, 76%);
     color: #000000;
     margin-bottom: 10px;
     // transform: scaleX(${props => props.theme.scale});
 `;
 
-type TileMeta = {
-    id: number;
-    position: [number, number];
-    value: number;
-    mergeWith?: number;
-};
+// type TileMeta = {
+//     id: number;
+//     position: [number, number];
+//     value: number;
+//     mergeWith?: number;
+// };
 
 type Props = {
     position: [number, number];
@@ -34,7 +34,6 @@ type Props = {
 const Tile: React.FC<Props> = (props) => {
     return (
     <Wrapper position={props.position}>
-        This is a tile.
     </Wrapper>
     )
 }
